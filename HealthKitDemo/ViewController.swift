@@ -16,10 +16,12 @@ class ViewController: UIViewController {
         
         let healthStore = HKHealthStore()
         
+        let startDate = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let endDate = Date()
         
         HealthKitService.getAuthorizationForHealthKit(healthStore, resultHandler: {
             HealthKitQuantityTypes.types.map { (type) -> Void in
-                HealthKitRepository.getHealthKitSampleType(type, healthStore, resultHandler: { samples in
+                HealthKitRepository.getHealthKitSampleType(startDate, endDate, type, healthStore, resultHandler: { samples in
                     mapQuantitySamplesToDict(type: type, samples: samples)
                 })
             }

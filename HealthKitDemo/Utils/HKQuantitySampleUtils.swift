@@ -12,7 +12,7 @@ import HealthKit
 func mapQuantitySamplesToDict(
     type: HealthKitQuantityRequest,
     samples: [HKQuantitySample]) -> [[String: Any]] {
-        samples.map { (sample) -> [String: Any] in
+        let result = samples.map { (sample) -> [String: Any] in
             let result: [String: Any] = [
                 "metadata": sample.metadata ?? [],
                 "startDate": toIsoDateString(date: sample.startDate),
@@ -29,4 +29,6 @@ func mapQuantitySamplesToDict(
             
             return result
         }
+    print(result.last)
+    return result
 }
