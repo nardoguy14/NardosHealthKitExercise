@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7202955624B055CE004FA43C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202955524B055CE004FA43C /* DateUtils.swift */; };
+		7202955924B0601A004FA43C /* QuantityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202955824B0601A004FA43C /* QuantityTypes.swift */; };
 		729B8C4B24AB17E600245F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C4A24AB17E600245F5F /* AppDelegate.swift */; };
 		729B8C4D24AB17E600245F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C4C24AB17E600245F5F /* ViewController.swift */; };
 		729B8C5024AB17E600245F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729B8C4E24AB17E600245F5F /* Main.storyboard */; };
 		729B8C5224AB17E800245F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729B8C5124AB17E800245F5F /* Assets.xcassets */; };
 		729B8C5524AB17E800245F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729B8C5324AB17E800245F5F /* LaunchScreen.storyboard */; };
+		729B8C5F24AB1ABE00245F5F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B8C5E24AB1ABE00245F5F /* HealthKit.framework */; };
+		729B8C6224AB483E00245F5F /* HealthKitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C6124AB483E00245F5F /* HealthKitRepository.swift */; };
+		729B8C6524AB48FC00245F5F /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C6424AB48FC00245F5F /* HealthKitService.swift */; };
+		72C685CA24B1955000589B04 /* HKQuantitySampleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7202955524B055CE004FA43C /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		7202955824B0601A004FA43C /* QuantityTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTypes.swift; sourceTree = "<group>"; };
 		729B8C4724AB17E600245F5F /* HealthKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		729B8C4A24AB17E600245F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		729B8C4C24AB17E600245F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,11 @@
 		729B8C5124AB17E800245F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		729B8C5424AB17E800245F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729B8C5624AB17E800245F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		729B8C5C24AB1ABE00245F5F /* HealthKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitDemo.entitlements; sourceTree = "<group>"; };
+		729B8C5E24AB1ABE00245F5F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		729B8C6124AB483E00245F5F /* HealthKitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitRepository.swift; sourceTree = "<group>"; };
+		729B8C6424AB48FC00245F5F /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKQuantitySampleUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +42,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729B8C5F24AB1ABE00245F5F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7202955424B055A5004FA43C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7202955524B055CE004FA43C /* DateUtils.swift */,
+				72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7202955724B05FFD004FA43C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7202955824B0601A004FA43C /* QuantityTypes.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		729B8C3E24AB17E600245F5F = {
 			isa = PBXGroup;
 			children = (
 				729B8C4924AB17E600245F5F /* HealthKitDemo */,
 				729B8C4824AB17E600245F5F /* Products */,
+				729B8C5D24AB1ABE00245F5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +86,11 @@
 		729B8C4924AB17E600245F5F /* HealthKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7202955724B05FFD004FA43C /* Domain */,
+				7202955424B055A5004FA43C /* Utils */,
+				729B8C6324AB48ED00245F5F /* Services */,
+				729B8C6024AB481C00245F5F /* Repositories */,
+				729B8C5C24AB1ABE00245F5F /* HealthKitDemo.entitlements */,
 				729B8C4A24AB17E600245F5F /* AppDelegate.swift */,
 				729B8C4C24AB17E600245F5F /* ViewController.swift */,
 				729B8C4E24AB17E600245F5F /* Main.storyboard */,
@@ -62,6 +99,30 @@
 				729B8C5624AB17E800245F5F /* Info.plist */,
 			);
 			path = HealthKitDemo;
+			sourceTree = "<group>";
+		};
+		729B8C5D24AB1ABE00245F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				729B8C5E24AB1ABE00245F5F /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		729B8C6024AB481C00245F5F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				729B8C6124AB483E00245F5F /* HealthKitRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		729B8C6324AB48ED00245F5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				729B8C6424AB48FC00245F5F /* HealthKitService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +157,12 @@
 				TargetAttributes = {
 					729B8C4624AB17E600245F5F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729B8C6524AB48FC00245F5F /* HealthKitService.swift in Sources */,
+				729B8C6224AB483E00245F5F /* HealthKitRepository.swift in Sources */,
+				7202955924B0601A004FA43C /* QuantityTypes.swift in Sources */,
+				7202955624B055CE004FA43C /* DateUtils.swift in Sources */,
+				72C685CA24B1955000589B04 /* HKQuantitySampleUtils.swift in Sources */,
 				729B8C4D24AB17E600245F5F /* ViewController.swift in Sources */,
 				729B8C4B24AB17E600245F5F /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitDemo/HealthKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAY7HS7643;
 				INFOPLIST_FILE = HealthKitDemo/Info.plist;
@@ -291,7 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = healthkitdemo.HealthKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitDemo/HealthKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAY7HS7643;
 				INFOPLIST_FILE = HealthKitDemo/Info.plist;
@@ -309,7 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = healthkitdemo.HealthKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

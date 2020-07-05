@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import HealthKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let healthStore = HKHealthStore()
+        
+        
+        HealthKitService.getAuthorizationForHealthKit(healthStore, resultHandler: {
+            HealthKitQuantityTypes.types.map { (type) -> Void in
+                HealthKitRepository.getHealthKitSampleType(type, healthStore, resultHandler: { samples in
+                    mapQuantitySamplesToDict(type: type, samples: samples)
+                })
+            }
+        })
     }
 
 
