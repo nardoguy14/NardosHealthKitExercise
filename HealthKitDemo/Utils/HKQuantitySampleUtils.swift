@@ -16,8 +16,10 @@ func mapQuantitySamplesToDict(
             let result: [String: Any] = [
                 "metadata": sample.metadata ?? [],
                 "startDate": toIsoDateString(date: sample.startDate),
+                "startDateEpoch": sample.startDate.millisecondsSince1970,
                 "endDate": toIsoDateString(date: sample.endDate),
-                "quantity": sample.quantity.doubleValue(for: HKUnit.init(from: type.units)),
+                "endDateEpoch": sample.endDate.millisecondsSince1970,
+                "value": sample.quantity.doubleValue(for: HKUnit.init(from: type.units)),
                 "count": sample.count,
                 "quantityType": type.identifier.rawValue,
                 "appleId": sample.uuid.uuidString,

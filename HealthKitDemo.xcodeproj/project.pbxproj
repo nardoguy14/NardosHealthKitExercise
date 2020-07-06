@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0B3736928B69F2248B74FE /* libPods-HealthKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742B81D8B8C0B38F38958D4 /* libPods-HealthKitDemo.a */; };
 		7202955624B055CE004FA43C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202955524B055CE004FA43C /* DateUtils.swift */; };
 		7202955924B0601A004FA43C /* QuantityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202955824B0601A004FA43C /* QuantityTypes.swift */; };
 		729B8C4B24AB17E600245F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C4A24AB17E600245F5F /* AppDelegate.swift */; };
@@ -18,9 +19,12 @@
 		729B8C6224AB483E00245F5F /* HealthKitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C6124AB483E00245F5F /* HealthKitRepository.swift */; };
 		729B8C6524AB48FC00245F5F /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8C6424AB48FC00245F5F /* HealthKitService.swift */; };
 		72C685CA24B1955000589B04 /* HKQuantitySampleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */; };
+		72C685D224B2B4CE00589B04 /* HighchartsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C685D124B2B4CE00589B04 /* HighchartsUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F213A98467B69D0ED8E11C9 /* Pods-HealthKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitDemo.release.xcconfig"; path = "Target Support Files/Pods-HealthKitDemo/Pods-HealthKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5742B81D8B8C0B38F38958D4 /* libPods-HealthKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7202955524B055CE004FA43C /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		7202955824B0601A004FA43C /* QuantityTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityTypes.swift; sourceTree = "<group>"; };
 		729B8C4724AB17E600245F5F /* HealthKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +39,8 @@
 		729B8C6124AB483E00245F5F /* HealthKitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitRepository.swift; sourceTree = "<group>"; };
 		729B8C6424AB48FC00245F5F /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKQuantitySampleUtils.swift; sourceTree = "<group>"; };
+		72C685D124B2B4CE00589B04 /* HighchartsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighchartsUtil.swift; sourceTree = "<group>"; };
+		DCACC7558820B51BB3C19DDE /* Pods-HealthKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-HealthKitDemo/Pods-HealthKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729B8C5F24AB1ABE00245F5F /* HealthKit.framework in Frameworks */,
+				6A0B3736928B69F2248B74FE /* libPods-HealthKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 			children = (
 				7202955524B055CE004FA43C /* DateUtils.swift */,
 				72C685C924B1955000589B04 /* HKQuantitySampleUtils.swift */,
+				72C685D124B2B4CE00589B04 /* HighchartsUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -72,6 +80,7 @@
 				729B8C4924AB17E600245F5F /* HealthKitDemo */,
 				729B8C4824AB17E600245F5F /* Products */,
 				729B8C5D24AB1ABE00245F5F /* Frameworks */,
+				9713927052439186C3884F8A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				729B8C5E24AB1ABE00245F5F /* HealthKit.framework */,
+				5742B81D8B8C0B38F38958D4 /* libPods-HealthKitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +135,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		9713927052439186C3884F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCACC7558820B51BB3C19DDE /* Pods-HealthKitDemo.debug.xcconfig */,
+				1F213A98467B69D0ED8E11C9 /* Pods-HealthKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 729B8C5924AB17E800245F5F /* Build configuration list for PBXNativeTarget "HealthKitDemo" */;
 			buildPhases = (
+				3F502E6D8436CFB50EC3A2F0 /* [CP] Check Pods Manifest.lock */,
 				729B8C4324AB17E600245F5F /* Sources */,
 				729B8C4424AB17E600245F5F /* Frameworks */,
 				729B8C4524AB17E600245F5F /* Resources */,
+				88ADD8DA59874C1F86B38487 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +218,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F502E6D8436CFB50EC3A2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88ADD8DA59874C1F86B38487 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthKitDemo/Pods-HealthKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthKitDemo/Pods-HealthKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthKitDemo/Pods-HealthKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		729B8C4324AB17E600245F5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,6 +267,7 @@
 			files = (
 				729B8C6524AB48FC00245F5F /* HealthKitService.swift in Sources */,
 				729B8C6224AB483E00245F5F /* HealthKitRepository.swift in Sources */,
+				72C685D224B2B4CE00589B04 /* HighchartsUtil.swift in Sources */,
 				7202955924B0601A004FA43C /* QuantityTypes.swift in Sources */,
 				7202955624B055CE004FA43C /* DateUtils.swift in Sources */,
 				72C685CA24B1955000589B04 /* HKQuantitySampleUtils.swift in Sources */,
@@ -352,6 +416,7 @@
 		};
 		729B8C5A24AB17E800245F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCACC7558820B51BB3C19DDE /* Pods-HealthKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthKitDemo/HealthKitDemo.entitlements;
@@ -371,6 +436,7 @@
 		};
 		729B8C5B24AB17E800245F5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F213A98467B69D0ED8E11C9 /* Pods-HealthKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthKitDemo/HealthKitDemo.entitlements;
